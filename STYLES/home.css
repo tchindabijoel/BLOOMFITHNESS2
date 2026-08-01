@@ -1,405 +1,279 @@
- * {
-     width: 100%;
-     box-sizing: border-box;
+*{
+    width: 100%;
+     box-sizing: border-box; 
      margin: 0px;
      padding: 0px;
-      flex-flow: border-box;
+       flex-flow: border-box; 
      border-radius: 20px; 
      text-wrap: wrap;
- }
-
- .tik {
-
-     border-radius: 30px;
-     border: size 30px;
-     padding-top: 7%;
-     padding-bottom: 7%;
-     width: 40%;
-     height: auto;
      list-style: none;
- }
- .Den{
-    padding: 40px;
- }
-
-
-
- .tik li {
-     font-size: 20px;
-      margin-bottom: 10px; 
-     color: aliceblue;
-
- }
-
- .tik li::before {
-     content: "✔";
-     /*remove the dotes*/
-     color: #ff4fa3;
-      margin-right: 10px; 
-
-
- }
-
- .right {
-     border: solid lightgray;
-     /* border-width: 100%; */
-     background-color: lightgrey;
-     background-size: cover;
-     /* width: 800px; */
-     /* height: 200px; */
- }
-
- .img1 {
-     width: 500px;
-     height: 600px;
- }
-
- .stuc {
-     color: #ff4fa3;
-     
- }
-
- .stuc p {
-     color: lightpink;
-    
- }
-
-
- .photo {
-     display: flex;
-     /*h2 also*/
-     gap: 200px;
- }
-
- .colo {
-     color: deeppink;
-     text-align: center;
- }
-
- /*Barre de nvigation*/
- .doron {
-     display: flex;
-     justify-content: space-between;
-     text-align: center;
-     background-image: url("../photos/_\ Yoga\ Aesthetic.jpg");
-     background-size: cover;
-     padding: 105px 30px;
-     padding-top: 30px;
-     padding-bottom: 70px;  
-      text-decoration: underline; 
-      background-repeat: no-repeat; 
-     list-style: none;
-     width: max-content;
-     text-wrap: wrap;
-     gap: 105px;
- }
-
-
- 
-
- .cool {
-     color: #ff4fa3;
-     text-align: center;
- }
-
- img {
-     width: max-content;
-     height: max-content;
- }
-
- .real {
-     display: flex;
-     gap: 50px;
-     background-color: lightpink;
-
- }
-
- .munn {
-     color: aliceblue;
-     display: flex;
-     gap: 50px;
-     width: max-content;
- }
-
- .munn h3 {
-     color: #d4a76a;
- }
-
- .quenn {
-     color: lightslategray;
-     font-size: x-large;
-
- }
-
- /*Background video*/
- #bg-video {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-     z-index: -1;
- }
-
- .mind {
-     color: #ff4fa3;
-     text-decoration: dashed;
- }
-
- .transparent {
-     display: flex;
-     gap: 100px;
-     padding: 30px;
- }
-
- .btn {
-      background-color: lightpink; 
- }
-
- .rel {
-     color: blue;
-    
- }
-
-
-.Fen{
-    /*  text-align: center; */
-    display: row;
-    padding: 40px;
-     background:rgba(0, 0, 0, 0, 0.08); 
-     padding: 100px 39px;
-     background-size: cover;
-      backdrop-filter: contrast(1.5);   
-   
- }
- .row{
-     color: pink; 
-     font-size: xx-large;
- }
- .Fen p{
-    color: white;
-    font-size: larger;
- }
- .ren{
-    color: aliceblue;
- }
- .moli{
-    padding: 60px;
-    color: aliceblue;
-    align-items: center;
-    font-size: larger;
- }
- .fill{
+}
+.navbar {
     display: flex;
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    text-align: center; 
-    color: white; 
-      animation: glisseApparition 3s ease-in-out infinite; 
-       }
-.ull{
-    display: grid;
-    grid-template-areas:"cool" "main main main ";
-     grid-template-columns:  4fr 4fr 4fr; 
-   gap: 6px;
-   /* padding-left: 30px;
-   padding-right: 20px;  */
-    flex-wrap: wrap;
-    text-align: center;
-    /* padding: 10px; */
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: absolute;     */
+    /* top: 50;    
+  width: 100%;  
+  z-index: 100;          */
+
 }
 
-      
+.logo {
+    color: rgb(117, 2, 102);
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
-    button{
-        appearance: auto;
-        font-size: medium;
-        font-family: 'Times New Roman', Times, serif;
-        letter-spacing: normal;
-        }
+}
 
- 
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
 
- @media ( max-width :320px ){
-  .btn,.colo,.cool,.Den,.doron,.Fen,.fill,.img1,.lonn,.main,.mind,.mind,.moli,.moli,.munn,.photo,.quenn,.real,.rel,.ren,.right,.row,.stuc,.tik,.transparent,.ull,
- 
- /* .img1 {
-      width: auto;  
-     height: auto;
-      lenght: auto; 
-      padding-left: 20px;
-      background-size: cover;  */
- }
- .doron {
-     display: flex;
-     justify-content: space-between;
-     text-align: center;
-     background-image: url("../photos/_\ Yoga\ Aesthetic.jpg");
-     background-size: cover;
-      padding: 700px 150px; 
-      padding-top: 30px; 
-      padding-bottom: 70px;  
-     text-decoration: underline; 
-     background-repeat: no-repeat;
-     list-style: none;
-          gap: 100px;
-     width: max-content;
-     text-wrap: wrap;
- }
- .munn {
-     color: aliceblue;
-     display: flex;
-     gap: 80px;
-     width: max-content;
- }
-  .tik {
+.navon a {
+    text-decoration: none;
+    color: rgb(117, 2, 102);
+    font-size: 18px;
 
-     background-size: cover;
-      border-radius: 30px;
-     border: size 30px;
-     padding-top: 7%;
-     padding-bottom: 7%;
-     width: 40%;
-     height: auto;
-     list-style: none;
-     }
-     img {
-     width: 200px;
-     height: 200px;
-      background-size: cover; 
-      text-wrap: wrap;
- }
- #bg-video {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     z-index: -1;
-     }
- 
-    .ull {
-     display: grid;
-     grid-template-areas: "lonn lonn"
-         "main main";
-     grid-template-columns: 4fr 4fr 4fr;
-     gap: 6px;
-      /* padding-left: 60px; 
-      padding-right: 60px;  */
-       background-size: cover;  }
-    .main{
-    border:transparent 20px; 
-   padding: 70px;
-   
-    }
-     .real {
-     display: flex;
-     gap: 50px;
-     background-color: lightpink;
-     width: max-content;
+}
 
- }
- .Fen{
-    /*  text-align: center; */
-    display: row;
-    padding: 40px;
-     background:rgba(0, 0, 0, 0, 0.08); 
-     padding: 100px 39px;
-     background-size: cover;
-      backdrop-filter: contrast(1.5); 
-      width: max-content;  
-   
- }
+.navon a:hover {
+    color: rgb(247, 7, 215);
+    font-size: 20px;
 
-  }
- @media ( max-width :375px ){
-  .btn,.colo,.cool,.Den,.doron,.Fen,.fill,.img1,.lonn,.main,.mind,.mind,.moli,.moli,.munn,.photo,.quenn,.real,.rel,.ren,.right,.row,.stuc,.tik,.transparent,.ull,
- 
- /* .img1 {
-     width: max-content; 
-     height: max-height ;
-     background-size: cover; */
- }
- .doron {
-     display: flex;
-     justify-content: space-between;
-     text-align: center;
-     background-image: url("../photos/_\ Yoga\ Aesthetic.jpg");
-     background-size: cover;
-       padding: 700px 150px; 
-      padding-top: 30px; 
-      padding-bottom: 70px;  
-     text-decoration: underline; 
-     background-repeat: no-repeat;
-     list-style: none;
-     gap: 100px;
-     width: max-content;
-     text-wrap: wrap;
- }
-  .tik {
- border-radius: 30px;
-     border: size 30px;
-     padding-top: 7%;
-     padding-bottom: 7%;
-     width: auto;
-     height: auto;
-     background-size: cover;
-    
-     }
-     img {
-     width: 200px;
-     height: 200px;
-     background-size: cover;
- }
- #bg-video {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%; }
- 
-    .ull {
-     display: grid;
-     grid-template-areas: "lonn lonn"
-         "main main";
-     grid-template-columns: 4fr 4fr 4fr;
-     gap: 6px;
-      /* padding-left: 60px; 
-      padding-right: 60px;  */
-     background-size: cover;
+}
+
+ .fff{
+    display: grid;
+    grid-template-areas: "delt delt"
+    "type type type" ;
+    grid-template-columns: 3fr 3fr 3fr;
      padding: 70px; 
-     
+    gap: 10px;
+text-align: center;
+} 
+.rett{
+    
+    height: 400px;
+}
+.delt{
+    text-align: center;
+}
+.senn{
+    background-color: #f6f6f6;
+}
+.fann{
+     background-color:rgb(222, 214, 214); 
+     display: flex; 
+    padding-bottom: 30px;
+    padding: 30px;
+     align-items: center; 
+}
+ .soon{
+    padding-bottom: 500px;
+background-image: url(../photos/Telecgar20.jpg);
+background-repeat: no-repeat;
+background-size: cover ;
+text-wrap: wrap;
+text-align: left;
+font-size: larger;
+ padding: 200px; 
+ width: 100%;
+ height: 800px;
+}
+.red{
+    background-size: contain;
+}
+.soon h3{
+    color: pink;
+}
+.extra{
+    display: none;
     }
-    .main{
-    border:transparent 20px; 
-   padding: 20px;
-   
-   
+ .extra p{
+   display: inline;
+ } 
+ input[type="checkbox"]  {
+    height:2em; 
+    display: block;
+    appearance: none;
  }
-      .real {
-     display: flex;
-     gap: 50px;
-     background-color: lightpink;
-     width: max-content;
+ label{
+    position: relative;
+    padding: 1em;
+    background-color: aliceblue;
+    text-emphasis-color: #ffffffff;
+    cursor: pointer;
+ }
+ label::before{
+    content: "Read more";
+ }
+
+input [type="checkbox"]:checked ~ label::before
+  
+   {
+    content: "Read less";
+   } 
+  .dots:has(~input[type="checkbox"]:checked){
+    display: none;
+  }
+.extra:has(~ input[type="checkbox"]:checked){
+    display: inline;
+}
+
+.vid{
+     display: grid; 
+     background-color: #ffffff;
+    grid-template-areas: "vide real"; 
+    grid-template-columns: 5fr 5fr;
+    padding: 30px;
+    gap: 20px;
+    backdrop-filter: blur(10px);
+    
+} 
+.reb{
+    color: soft rgb(194, 6, 37);
+    box-shadow: none ;
+}
+.real{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+video{
+
+     height: 60;  
+     width: 540; 
+    
+}
+.sorel{
+    width: 250px;
+    height: 200x;
+}
+.munn{
+    display: grid;
+    grid-template-areas: "foot foot foot foot foot foot";
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr ;
+    padding: 10px;
+    gap: 10px;
+    background-color: lightskyblue;
+    color: #ffffff;
+    text-align: center;
+    background: fixed;
+}
+
+@media  ( max-width :600px ){
+    .delt,.dots:has(~input[type="checkbox"]:checked),.extra,.extra:has(~ input[type="checkbox"]:checked),.fann,.fff,.logo,.munn,.navbar,.navon,.real,.reb,.red,.rett,.senn,.soon,.sorel,.vid,
+}
+.soon{
+  padding-bottom: 500px;
+background-image: url(../photos/Telecgar20.jpg);
+background-repeat: no-repeat;
+background-size: cover ;
+text-wrap: wrap;
+text-align: left;
+font-size: larger;
+ padding: 350px; 
+ width: 100%;
+ height: 100%;
+} 
+.vide{
+    width: 400px;
+    height: 200px;
+} 
+.original{
+    text-align: left;
+    font-size: larger;
+}
+.munn{
+    display: grid;
+    grid-template-areas: "foot foot foot foot foot foot";
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    padding: 80px;
+    gap: 10px;
+    background-color: lightskyblue;
+    color: #ffffff;
+    text-align: center;
+    background: fixed;
+}
+.vid{
+     display: grid; 
+     background-color: #ffffff;
+    grid-template-areas: "vide real"; 
+    grid-template-columns: 5fr 5fr;
+    padding: 30px;
+    gap: 20px;
+    backdrop-filter: blur(10px);
+    
+} 
+ .fff{
+    display: grid;
+    grid-template-areas: "delt delt"
+    "type type type" ;
+    grid-template-columns: 5fr 5fr 5fr;
+     padding: 70px; 
+    gap: 100px;
+text-align: center;
+background: fixed;
+} 
+@media  ( max-width :400px ){
+    .delt,.dots:has(~input[type="checkbox"]:checked),.extra,.extra:has(~ input[type="checkbox"]:checked),.fann,.fff,.logo,.munn,.navbar,.navon,.real,.reb,.red,.rett,.senn,.soon,.sorel,.vid,
+}
+.soon{
+  padding-bottom: 500px;
+background-image: url(../photos/Telecgar20.jpg);
+background-repeat: no-repeat;
+background-size: cover ;
+text-wrap: wrap;
+text-align: left;
+font-size: larger;
+ padding: 350px; 
+ width: 100%;
+ height: 100%;
+} 
+.vide{
+    width: 400px;
+    height: 200px;
+} 
+.original{
+    text-align: left;
+    font-size: larger;
 
   }
-  .Fen{
-    /*  text-align: center; */
-    display: row;
-    /* padding: 40px; */
-     background:rgba(0, 0, 0, 0, 0.08); 
-     padding: 100px 39px;
-     background-size: cover;
-      backdrop-filter: contrast(1.5); 
-      width: max-content; 
-      padding: 30px; 
-   
- }
-  .munn {
-     color: aliceblue;
-     display: flex;
-     gap: 80px;
-     width: max-content;
- }
+.munn{
+    display: grid;
+    grid-template-areas: "foot foot foot foot foot foot";
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    padding: 80px;
+    gap: 10px;
+    background-color: lightskyblue;
+    color: #ffffff;
+    text-align: center;
+}
+.vid{
+     display: grid; 
+     background-color: #ffffff;
+    grid-template-areas: "vide real"; 
+    grid-template-columns: 5fr 5fr;
+    padding: 30px;
+    gap: 10px;
+    backdrop-filter: blur(10px);
+    
+} 
+ .fff{
+    display: grid;
+    grid-template-areas: "delt delt"
+    "type type type" ;
+    grid-template-columns: 5fr 5fr 5fr;
+     padding: 70px; 
+    gap: 100px;
+text-align: center;
+background: fixed;
+} 
+
