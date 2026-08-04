@@ -71,7 +71,7 @@ text-align: center;
 }
  .soon{
     padding-bottom: 500px;
-background-image: url(../photos/Telecgar20.jpg);
+background-image: url(../image/qq\ \(1\).jpg);
 background-repeat: no-repeat;
 background-size: cover ;
 text-wrap: wrap;
@@ -157,7 +157,7 @@ video{
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr ;
     padding: 10px;
     gap: 10px;
-    background-color: lightskyblue;
+    background-color: pink;
     color: #ffffff;
     text-align: center;
     grid-gap: 0.2em;
@@ -232,7 +232,7 @@ font-size: 1rem;
     grid-template-columns: 2fr 2fr ;
     /* padding: 10px;
     gap: 10px; */
-    background-color: lightskyblue;
+    background-color: pink;
     color: #ffffff;
     text-align: center;
     grid-gap: 0.2em;
