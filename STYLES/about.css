@@ -10,16 +10,6 @@ main{
     padding: 10px;
   background-color:#F8EEF2;
 }
-/* .list {
-    text-align: center;
-    list-style: none;
-    display: flex;
-    background-color: lightpink;
-    height: 50px;
-    margin-bottom: 0px;
-    width: 100%;
-    border-radius: 0px;
-} */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -66,7 +56,7 @@ main{
     justify-content: center;
     padding-top:400px;
     font-size: 1.7rem;
-    color: white;
+    
 
 }
 .sec1{
@@ -177,12 +167,6 @@ div.lsec{
     width: 50%;
 }
 
-/* .contain{
-    display: grid;
-    grid-template-columns: 2fr;
-    gap: 15px;
-} */
-
 .munn {
     display: grid;
     grid-template-areas: "foot foot foot foot foot foot ";
@@ -196,14 +180,6 @@ footer{
     background-color:#F8EEF2;
 }
 
-grid-template-columns: repeat(auto-fit, minmax(250px))
-/* @media (min-width:320px) {
-    .contain,.container,.div1,.sec1{
-        grid-template-columns: repeat(auto fit);
-        flex-direction: column-reverse;
-    }
-    
-} */
 .contain  {
   display: grid;
   gap: 1rem;
