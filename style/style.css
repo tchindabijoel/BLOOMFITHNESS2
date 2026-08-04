@@ -1,0 +1,65 @@
+.mon-fond{
+    background-image: url('image/image.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    
+    margin: 50p;
+    overflow-x: auto;
+    padding: 100px;
+    margin: 10px;
+}
+.different-prix{
+    display: grid;
+    grid-template-areas: "mes-prix mes-prix mes-prix"
+    "prix prix prix";
+    grid-template-columns: 5fr 5fr 5fr;
+    list-style: none;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    
+
+}
+ul{
+    list-style: none;
+    
+    
+}
+.mes-prix{
+    text-align: center;
+
+
+
+}
+.p{
+    background-color: antiquewhite;
+    border: 20px;
+}
+.A1{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    gap: 60PX;
+    justify-content: center;
+    flex-direction: row;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 10px;
+
+}
+.link{
+    color: rgb(114, 23, 23);
+}
+.b1{
+    flex-direction: row;
+    display: grid;
+    text-align: center;
+    grid-template-areas: " a a";
+    background-color: pink;
+}
+
+
+
