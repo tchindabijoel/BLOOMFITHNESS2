@@ -7,40 +7,34 @@
      border-radius: 20px; 
      text-wrap: wrap;
      list-style: none;
+      /* overflow: hidden;  */
 }
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #ffffff;
-    padding: 15px 50px;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
     background-size: cover;
-    /* position: absolute;     */
-    /* top: 50;    
-  width: 100%;  
-  z-index: 100;          */
-
 }
 
 .logo {
     color: rgb(117, 2, 102);
     font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
 
 .navbar ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 20px;
+    /* display: none; */
 }
 
 .navon a {
     text-decoration: none;
     color: rgb(117, 2, 102);
     font-size: 18px;
-
 }
 
 .navon a:hover {
@@ -53,9 +47,8 @@
     display: grid;
     grid-template-areas: "delt delt"
     "type type type" ;
-    grid-template-columns: 3fr 3fr 3fr;
-     padding: 70px; 
-    gap: 10px;
+    grid-template-columns: 3fr 3fr 3fr; 
+     gap: 10px;
 text-align: center;
 } 
 .rett{
@@ -64,6 +57,7 @@ text-align: center;
 }
 .delt{
     text-align: center;
+    display: none;
 }
 .senn{
     background-color: #f6f6f6;
@@ -85,7 +79,8 @@ text-align: left;
 font-size: larger;
  padding: 200px; 
  width: 100%;
- height: 800px;
+ /* height: 800px; */
+
 }
 .red{
     background-size: contain;
@@ -134,8 +129,8 @@ input [type="checkbox"]:checked ~ label::before
     grid-template-columns: 5fr 5fr;
     padding: 30px;
     gap: 20px;
+    grid-gap: 0.2em;
     backdrop-filter: blur(10px);
-    
 } 
 .reb{
     color: soft rgb(194, 6, 37);
@@ -153,7 +148,7 @@ video{
     
 }
 .sorel{
-    width: 250px;
+    width: 100px;
     height: 200x;
 }
 .munn{
@@ -165,115 +160,86 @@ video{
     background-color: lightskyblue;
     color: #ffffff;
     text-align: center;
-    background: fixed;
+    grid-gap: 0.2em;
 }
-
-@media  ( max-width :600px ){
-    .delt,.dots:has(~input[type="checkbox"]:checked),.extra,.extra:has(~ input[type="checkbox"]:checked),.fann,.fff,.logo,.munn,.navbar,.navon,.real,.reb,.red,.rett,.senn,.soon,.sorel,.vid,
-}
-.soon{
-  padding-bottom: 500px;
+@media (max-width: 600px){
+    .soon{
 background-image: url(../photos/Telecgar20.jpg);
 background-repeat: no-repeat;
 background-size: cover ;
 text-wrap: wrap;
-text-align: left;
-font-size: larger;
- padding: 350px; 
+text-align: center;
+font-size: 1rem;
+ padding: 100px; 
  width: 100%;
- height: 100%;
-} 
-.vide{
-    width: 400px;
-    height: 200px;
-} 
-.original{
-    text-align: left;
-    font-size: larger;
+ min-height: 400px;
+ justify-content: center;
+    }
+    .soon h3{
+        font-size: 1.8rem;
+    }
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+     flex-direction: column; 
+     position: sticky; 
+   
 }
-.munn{
-    display: grid;
-    grid-template-areas: "foot foot foot foot foot foot";
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
-    padding: 80px;
-    gap: 10px;
-    background-color: lightskyblue;
-    color: #ffffff;
-    text-align: center;
-    background: fixed;
-}
-.vid{
-     display: grid; 
-     background-color: #ffffff;
-    grid-template-areas: "vide real"; 
-    grid-template-columns: 5fr 5fr;
-    padding: 30px;
-    gap: 20px;
-    backdrop-filter: blur(10px);
-    
-} 
  .fff{
     display: grid;
-    grid-template-areas: "delt delt"
-    "type type type" ;
-    grid-template-columns: 5fr 5fr 5fr;
-     padding: 70px; 
-    gap: 100px;
-text-align: center;
-background: fixed;
-} 
-@media  ( max-width :400px ){
-    .delt,.dots:has(~input[type="checkbox"]:checked),.extra,.extra:has(~ input[type="checkbox"]:checked),.fann,.fff,.logo,.munn,.navbar,.navon,.real,.reb,.red,.rett,.senn,.soon,.sorel,.vid,
-}
-.soon{
-  padding-bottom: 500px;
-background-image: url(../photos/Telecgar20.jpg);
-background-repeat: no-repeat;
-background-size: cover ;
-text-wrap: wrap;
-text-align: left;
-font-size: larger;
- padding: 350px; 
- width: 100%;
- height: 100%;
-} 
-.vide{
-    width: 400px;
-    height: 200px;
-} 
-.original{
-    text-align: left;
-    font-size: larger;
+    grid-template-areas: "delt"
+    "type" ;
+    grid-template-columns: 1fr; 
+     /* padding: 70px;  */
+    gap: 15px;
+    padding: 40px 20px;
+  position: sticky;
+ padding-right: 20px;
+    height: auto;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    min-height: 100vh;
+   }
+   .soon h3{
+    color: pink;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 
-  }
+   } 
+   .vid{
+     display: grid; 
+     background-color: #ffffff;
+    grid-template-areas: "vide" 
+    "real"; 
+    grid-template-columns: 1fr ;
+    backdrop-filter: blur(10px); 
+    
+} 
 .munn{
     display: grid;
-    grid-template-areas: "foot foot foot foot foot foot";
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
-    padding: 80px;
-    gap: 10px;
+    grid-template-areas: "foot"
+     "foot";
+    grid-template-columns: 2fr 2fr ;
+    /* padding: 10px;
+    gap: 10px; */
     background-color: lightskyblue;
     color: #ffffff;
     text-align: center;
+    grid-gap: 0.2em;
 }
-.vid{
-     display: grid; 
-     background-color: #ffffff;
-    grid-template-areas: "vide real"; 
-    grid-template-columns: 5fr 5fr;
-    padding: 30px;
-    gap: 10px;
-    backdrop-filter: blur(10px);
-    
-} 
- .fff{
-    display: grid;
-    grid-template-areas: "delt delt"
-    "type type type" ;
-    grid-template-columns: 5fr 5fr 5fr;
-     padding: 70px; 
-    gap: 100px;
-text-align: center;
-background: fixed;
-} 
+
+}
+  
+
+
 
