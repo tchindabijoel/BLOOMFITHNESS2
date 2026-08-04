@@ -71,7 +71,7 @@ text-align: center;
 }
  .soon{
     padding-bottom: 500px;
-background-image: url(../image/qq\ \(1\).jpg);
+background-image: url(../photos/Telecgar20.jpg);
 background-repeat: no-repeat;
 background-size: cover ;
 text-wrap: wrap;
@@ -87,6 +87,7 @@ font-size: larger;
 }
 .soon h3{
     color: pink;
+    font-size: xx-large;
 }
 .extra{
     display: none;
