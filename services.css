@@ -1,0 +1,394 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 20px;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: absolute;     */
+    /* top: 50;    
+  width: 100%;  
+  z-index: 100;          */
+
+}
+
+.logo {
+    color: rgb(117, 2, 102);
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navon a {
+    text-decoration: none;
+    color: rgb(117, 2, 102);
+    font-size: 18px;
+
+}
+
+.navon a:hover {
+    color: rgb(247, 7, 215);
+    font-size: 20px;
+
+}
+
+.headings {
+    font-size: 30px;
+    font-family: cursive;
+    background-position: top;
+    font-size: 120px;
+    color: #74196f;
+    padding-left: 50px;
+
+}
+
+.yoga-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.slides {
+    width: 300px;
+    height: 300px;
+    border-radius: 1px;
+    border-style:solid;
+    border-width: 2px;
+    margin-bottom: 5rem;
+}
+
+.slide-wrapper {
+    width: 304px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+}
+
+.image-slider {
+    width: 100%;
+    display: flex;
+    animation: slide 20s infinite;
+
+}
+
+
+.text {
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 50px;
+}
+
+button {
+    display: flexbox;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+.button-choice {
+    text-align: center;
+    background-color: #f2caf0;
+
+    font-weight: bold;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.for-yoga {
+    background-color: #f4eef4;
+    padding: 50px;
+    /* height: 50rem; */
+    overflow: hidden;
+
+}
+
+.for-dance {
+    background-image: linear-gradient(rgba(237, 235, 235, 0.564), rgba(235, 235, 235, 0.477)), url('images/pink\ flowers\ background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    /* height: 50rem; */
+}
+
+.for-fitness {
+    padding:15px;
+    height: 50rem;
+    text-align: left;
+}
+
+h2 {
+    height: 100px;
+    font-size: 88px;
+    padding-bottom: 7rem;
+    overflow: hidden;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-self: center;
+    gap: 50px;
+
+}
+
+.image {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-style: 20px solid rgb(160, 52, 52);
+    border-radius: 10px;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+
+.image__overlay:hover {
+    opacity: 1;
+    transition: transform 0.25s;
+    background: #f2caf0;
+    border-radius: 10px;
+}
+
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+
+.type {
+    display: inline-flex;
+}
+
+.type span {
+    word-break: break-all;
+    height: 1.2em;
+    width: 0%;
+    overflow: hidden;
+    animation: t 2s linear infinite alternate;
+}
+
+.type span:before {
+    content: " ";
+    display: inline-block;
+}
+
+@keyframes t {
+
+    90%,
+    100% {
+        width: 100%
+    }
+}
+
+button {
+    background-color: rgb(117, 5, 125);
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+    font-style: oblique;
+    border-radius: 10px;
+    place-self: center;
+}
+
+button:hover {
+    background-color: #f2caf0;
+    color: black;
+}
+
+@media (max-width: 700px) {
+    .yoga-box {
+        display: grid;
+        grid-template-columns: 1fr;
+
+
+    }
+
+    .image-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-self: center;
+        gap: 40px;
+
+    }
+
+    .image {
+        position: relative;
+        width: 400px;
+        height: 250px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: last baseline;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;
+
+
+    }
+
+    .text {
+        padding: 15px;
+    }
+}
+
+.headings {
+    font-size: 86px;
+
+
+}
+
+@media (max-width: 450px) {
+
+
+    .image-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-self: center;
+        gap: 40px;
+
+    }
+
+    .image {
+        position: relative;
+        width: 200px;
+        height: 250px;
+    }
+
+
+    .navon a {
+        font-size: 12px;
+    }
+
+    .navon a:hover {
+        color: rgb(247, 7, 215);
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 12px;
+        padding-bottom: 5rem;
+    }
+}
+
+@media (max-width: 350px) {
+
+
+    .image-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-self: center;
+        gap: 40px;
+
+    }
+
+    .slides {
+        width: 250px;
+        height: 300px;
+
+    }
+
+    .slide-wrapper {
+        width: 255px;
+        position: relative;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+    }
+
+    .navon a {
+        font-size: 12px;
+    }
+
+    .navon a:hover {
+        color: rgb(247, 7, 215);
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+}
