@@ -8,8 +8,9 @@
 }
 main{
     padding: 10px;
-  background-color:#F8EEF2;
+  background-color: lightpink;
 }
+/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -56,7 +57,7 @@ main{
     justify-content: center;
     padding-top:400px;
     font-size: 1.7rem;
-    
+    color: white;
 
 }
 .sec1{
@@ -118,7 +119,7 @@ div.lsec{
    .img3{
     height: 200px;
     padding: 8px;
-    width: 350px;
+    width: 300px;
     border: 5px solid white;
 
    }
@@ -137,6 +138,7 @@ div.lsec{
     background-position:center;
     padding: 10px;
     gap: 7px;
+    color:white;
     position: sticky;
     
 }
@@ -172,7 +174,7 @@ div.lsec{
     grid-template-areas: "foot foot foot foot foot foot ";
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr ;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
     font-size: 20px;
     gap: 5px;
 }
@@ -183,7 +185,7 @@ footer{
 .contain  {
   display: grid;
   gap: 1rem;
-  grid-template-columns:2fr;
+  grid-template-columns:1fr 1fr;
 }
 .container {
   display: grid;
@@ -200,7 +202,8 @@ footer{
   .contain{
     grid-template-columns: 1fr 1fr ;
   }
-.munn{
+  .munn{
+    display: grid;
     grid-template-columns: repeat(3 ,3fr);
   }
 }
